@@ -40,6 +40,9 @@
     <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v21.2" />
     <Reference Include="DevExpress.Printing.v21.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -60,6 +63,12 @@
     <Compile Include="QLCH.Designer.cs">
       <DependentUpon>QLCH.cs</DependentUpon>
     </Compile>
+    <Compile Include="QLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLNV.Designer.cs">
+      <DependentUpon>QLNV.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,6 +82,9 @@
     </Compile>
     <EmbeddedResource Include="QLCH.resx">
       <DependentUpon>QLCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNV.resx">
+      <DependentUpon>QLNV.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
@@ -120,6 +132,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\properties_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencolor_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencolor_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clearall_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clearall_16x16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

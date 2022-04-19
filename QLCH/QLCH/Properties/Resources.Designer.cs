@@ -63,6 +63,66 @@ namespace QLCH.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("add_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("add_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap apply_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("apply_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clearall_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("clearall_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clearall_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("clearall_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap customer_16x16 {
             get {
                 object obj = ResourceManager.GetObject("customer_16x16", resourceCulture);
@@ -123,6 +183,26 @@ namespace QLCH.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pencolor_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("pencolor_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pencolor_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("pencolor_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap properties_16x16 {
             get {
                 object obj = ResourceManager.GetObject("properties_16x16", resourceCulture);
@@ -136,6 +216,26 @@ namespace QLCH.Properties {
         internal static System.Drawing.Bitmap properties_32x32 {
             get {
                 object obj = ResourceManager.GetObject("properties_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap suggestion_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("suggestion_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap suggestion_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("suggestion_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

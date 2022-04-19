@@ -32,16 +32,18 @@ namespace QLCH
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_xoa = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_resetPass = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cb_loaiNV = new DevExpress.XtraEditors.ComboBoxEdit();
             this.btn_Huy = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Luu = new DevExpress.XtraEditors.SimpleButton();
             this.txt_MatKhau = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.lb_MatKhau = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txt_HoTen = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -50,11 +52,9 @@ namespace QLCH
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_loaiNV.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MatKhau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_HoTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MaNV.Properties)).BeginInit();
@@ -71,8 +71,8 @@ namespace QLCH
             this.ribbon.SearchEditItem,
             this.barButtonItem1,
             this.barButtonItem2,
-            this.barButtonItem3,
-            this.barButtonItem4});
+            this.btn_xoa,
+            this.btn_resetPass});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.MaxItemId = 5;
             this.ribbon.Name = "ribbon";
@@ -88,6 +88,7 @@ namespace QLCH
             this.barButtonItem1.ImageOptions.Image = global::QLCH.Properties.Resources.add_16x16;
             this.barButtonItem1.ImageOptions.LargeImage = global::QLCH.Properties.Resources.add_32x32;
             this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -96,14 +97,25 @@ namespace QLCH
             this.barButtonItem2.ImageOptions.Image = global::QLCH.Properties.Resources.pencolor_16x16;
             this.barButtonItem2.ImageOptions.LargeImage = global::QLCH.Properties.Resources.pencolor_32x32;
             this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
-            // barButtonItem3
+            // btn_xoa
             // 
-            this.barButtonItem3.Caption = "Xóa";
-            this.barButtonItem3.Id = 3;
-            this.barButtonItem3.ImageOptions.Image = global::QLCH.Properties.Resources.clearall_16x16;
-            this.barButtonItem3.ImageOptions.LargeImage = global::QLCH.Properties.Resources.clearall_32x32;
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.btn_xoa.Caption = "Xóa";
+            this.btn_xoa.Id = 3;
+            this.btn_xoa.ImageOptions.Image = global::QLCH.Properties.Resources.clearall_16x16;
+            this.btn_xoa.ImageOptions.LargeImage = global::QLCH.Properties.Resources.clearall_32x32;
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_xoa_ItemClick);
+            // 
+            // btn_resetPass
+            // 
+            this.btn_resetPass.Caption = "Đặt lại mật khẩu";
+            this.btn_resetPass.Id = 4;
+            this.btn_resetPass.ImageOptions.Image = global::QLCH.Properties.Resources.encryptdocument_16x16;
+            this.btn_resetPass.ImageOptions.LargeImage = global::QLCH.Properties.Resources.encryptdocument_32x32;
+            this.btn_resetPass.Name = "btn_resetPass";
+            this.btn_resetPass.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_resetPass_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -117,8 +129,14 @@ namespace QLCH
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btn_xoa);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.AllowTextClipping = false;
+            this.ribbonPageGroup2.ItemLinks.Add(this.btn_resetPass);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             // 
             // ribbonStatusBar
             // 
@@ -129,11 +147,11 @@ namespace QLCH
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBoxEdit1);
+            this.groupBox1.Controls.Add(this.cb_loaiNV);
             this.groupBox1.Controls.Add(this.btn_Huy);
             this.groupBox1.Controls.Add(this.btn_Luu);
             this.groupBox1.Controls.Add(this.txt_MatKhau);
-            this.groupBox1.Controls.Add(this.labelControl4);
+            this.groupBox1.Controls.Add(this.lb_MatKhau);
             this.groupBox1.Controls.Add(this.labelControl3);
             this.groupBox1.Controls.Add(this.txt_HoTen);
             this.groupBox1.Controls.Add(this.labelControl2);
@@ -147,21 +165,22 @@ namespace QLCH
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
-            // comboBoxEdit1
+            // cb_loaiNV
             // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(514, 17);
-            this.comboBoxEdit1.MenuManager = this.ribbon;
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxEdit1.Properties.Appearance.Options.UseFont = true;
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cb_loaiNV.EditValue = "Nhân viên";
+            this.cb_loaiNV.Location = new System.Drawing.Point(514, 17);
+            this.cb_loaiNV.MenuManager = this.ribbon;
+            this.cb_loaiNV.Name = "cb_loaiNV";
+            this.cb_loaiNV.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_loaiNV.Properties.Appearance.Options.UseFont = true;
+            this.cb_loaiNV.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Properties.DropDownRows = 2;
-            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
+            this.cb_loaiNV.Properties.DropDownRows = 2;
+            this.cb_loaiNV.Properties.Items.AddRange(new object[] {
             "Nhân viên",
             "Quản lý"});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(162, 22);
-            this.comboBoxEdit1.TabIndex = 10;
+            this.cb_loaiNV.Size = new System.Drawing.Size(162, 22);
+            this.cb_loaiNV.TabIndex = 10;
             // 
             // btn_Huy
             // 
@@ -171,6 +190,7 @@ namespace QLCH
             this.btn_Huy.Size = new System.Drawing.Size(75, 23);
             this.btn_Huy.TabIndex = 9;
             this.btn_Huy.Text = "Hủy";
+            this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
             // 
             // btn_Luu
             // 
@@ -180,6 +200,7 @@ namespace QLCH
             this.btn_Luu.Size = new System.Drawing.Size(75, 23);
             this.btn_Luu.TabIndex = 9;
             this.btn_Luu.Text = "Lưu";
+            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
             // txt_MatKhau
             // 
@@ -191,16 +212,18 @@ namespace QLCH
             this.txt_MatKhau.Properties.PasswordChar = '*';
             this.txt_MatKhau.Size = new System.Drawing.Size(162, 22);
             this.txt_MatKhau.TabIndex = 8;
+            this.txt_MatKhau.Visible = false;
             // 
-            // labelControl4
+            // lb_MatKhau
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(405, 61);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(52, 16);
-            this.labelControl4.TabIndex = 7;
-            this.labelControl4.Text = "Mật khẩu";
+            this.lb_MatKhau.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_MatKhau.Appearance.Options.UseFont = true;
+            this.lb_MatKhau.Location = new System.Drawing.Point(405, 61);
+            this.lb_MatKhau.Name = "lb_MatKhau";
+            this.lb_MatKhau.Size = new System.Drawing.Size(52, 16);
+            this.lb_MatKhau.TabIndex = 7;
+            this.lb_MatKhau.Text = "Mật khẩu";
+            this.lb_MatKhau.Visible = false;
             // 
             // labelControl3
             // 
@@ -232,6 +255,7 @@ namespace QLCH
             // 
             // txt_MaNV
             // 
+            this.txt_MaNV.Enabled = false;
             this.txt_MaNV.Location = new System.Drawing.Point(103, 19);
             this.txt_MaNV.MenuManager = this.ribbon;
             this.txt_MaNV.Name = "txt_MaNV";
@@ -274,18 +298,8 @@ namespace QLCH
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "Đổi mật khẩu";
-            this.barButtonItem4.Id = 4;
-            this.barButtonItem4.Name = "barButtonItem4";
+            this.gridView1.OptionsBehavior.Editable = false;
+            this.gridView1.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridView1_RowClick);
             // 
             // QLNV
             // 
@@ -305,7 +319,7 @@ namespace QLCH
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_loaiNV.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MatKhau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_HoTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MaNV.Properties)).EndInit();
@@ -330,17 +344,17 @@ namespace QLCH
         private DevExpress.XtraEditors.TextEdit txt_MaNV;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit txt_MatKhau;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl lb_MatKhau;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit txt_HoTen;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.SimpleButton btn_Luu;
         private DevExpress.XtraEditors.SimpleButton btn_Huy;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
+        private DevExpress.XtraEditors.ComboBoxEdit cb_loaiNV;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem btn_xoa;
+        private DevExpress.XtraBars.BarButtonItem btn_resetPass;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
     }
 }

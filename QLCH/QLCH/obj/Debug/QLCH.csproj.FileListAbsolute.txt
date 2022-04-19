@@ -94,3 +94,9 @@ C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\es\DevExpress.Office.v21.2.Core.
 C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\ja\DevExpress.Office.v21.2.Core.resources.dll
 C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\ru\DevExpress.Office.v21.2.Core.resources.dll
 C:\Users\locng\Desktop\QLCH\QLCH\QLCH\obj\Debug\QLCH.QLNV.resources
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\BUS.dll
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\DTO.dll
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\DAO.dll
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\BUS.pdb
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\DTO.pdb
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\DAO.pdb

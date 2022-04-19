@@ -1,0 +1,6 @@
+C:\Users\locng\Desktop\QLCH\QLCH\DTO\bin\Debug\DTO.dll
+C:\Users\locng\Desktop\QLCH\QLCH\DTO\bin\Debug\DTO.pdb
+C:\Users\locng\Desktop\QLCH\QLCH\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\locng\Desktop\QLCH\QLCH\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\locng\Desktop\QLCH\QLCH\DTO\obj\Debug\DTO.dll
+C:\Users\locng\Desktop\QLCH\QLCH\DTO\obj\Debug\DTO.pdb

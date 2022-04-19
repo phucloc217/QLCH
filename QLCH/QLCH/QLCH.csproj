@@ -163,6 +163,22 @@
   <ItemGroup>
     <None Include="Resources\clearall_16x16.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{be0eb751-56f8-4235-81de-263792a83969}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{51e23029-9df2-4805-bef6-6622b45384bc}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\encryptdocument_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\encryptdocument_16x16.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

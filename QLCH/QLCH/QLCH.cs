@@ -81,5 +81,34 @@ namespace QLCH
                 frm.Show();
             }
         }
+
+        private void barButtonItem7_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = new QLDichVu();
+            if (KiemTraTonTai("QLDichVu") == true)
+                frm.Activate();
+            else
+            {
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void barButtonItem3_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = new QLHoaDon();
+            if (KiemTraTonTai("QLHoaDon") == true)
+                frm.Activate();
+            else
+            {
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
     }
 }

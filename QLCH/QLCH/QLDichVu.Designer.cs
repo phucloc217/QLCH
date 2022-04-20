@@ -265,7 +265,7 @@ namespace QLCH
             this.Name = "QLDichVu";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
-            this.Text = "QLDichVu";
+            this.Text = "Quản lý dịch vụ";
             this.Load += new System.EventHandler(this.QLDichVu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             this.groupBox1.ResumeLayout(false);

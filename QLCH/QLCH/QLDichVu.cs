@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using DTO;
-using BUS;
 using DevExpress.XtraEditors;
 
 namespace QLCH
@@ -30,7 +29,7 @@ namespace QLCH
         }
         private void LoadTable()
         {
-            gridControl1.DataSource = lhdb.LoaiLoaiHD();
+            gridControl1.DataSource = lhdb.LoadLoaiHD();
         }
         private void XoaTextBox()
         {

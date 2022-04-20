@@ -111,3 +111,4 @@ C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\ru\DevExpress.XtraRichEdit.v21.2
 C:\Users\locng\Desktop\QLCH\QLCH\QLCH\obj\Debug\QLCH.QLLau.resources
 C:\Users\locng\Desktop\QLCH\QLCH\QLCH\obj\Debug\QLCH.QLCanHo.resources
 C:\Users\locng\Desktop\QLCH\QLCH\QLCH\obj\Debug\QLCH.QLDichVu.resources
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\obj\Debug\QLCH.QLHoaDon.resources

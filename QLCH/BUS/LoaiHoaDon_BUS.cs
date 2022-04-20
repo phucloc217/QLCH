@@ -11,7 +11,7 @@ namespace BUS
 {
     public class LoaiHoaDon_BUS
     {
-        public DataTable LoaiLoaiHD()
+        public DataTable LoadLoaiHD()
         {
             KetNoiCSDL ketnoicsdl = new KetNoiCSDL();
             DataTable dt = ketnoicsdl.LoadData("select * from loaihoadon order by maloai asc");
@@ -63,6 +63,17 @@ namespace BUS
                maloai
             };
             return kn.Execute(sql, para);
+        }
+
+        public LoaiHoaDon TimLoaiHD(string ma)
+        {
+            KetNoiCSDL ketnoicsdl = new KetNoiCSDL();
+            DataTable dt = ketnoicsdl.LoadData("select top 1 * from loaihoadon where maloai = "+ma);
+            LoaiHoaDon lhd = new LoaiHoaDon();
+            lhd.Ma = (int)dt.Rows[0]["maloai"];
+            lhd.Tenloai = (string)dt.Rows[0]["tenloai"];
+            lhd.Dongia = (int)dt.Rows[0]["dongia"];
+            return lhd;
         }
 
     }

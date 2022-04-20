@@ -34,7 +34,7 @@ namespace QLCH
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.btn_QLKhach = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_hopdong = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
@@ -48,6 +48,8 @@ namespace QLCH
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -67,7 +69,7 @@ namespace QLCH
             this.barButtonItem1,
             this.barButtonItem2,
             this.btn_QLKhach,
-            this.barButtonItem4,
+            this.btn_hopdong,
             this.barButtonItem5,
             this.barButtonItem6,
             this.barButtonItem7,
@@ -81,6 +83,7 @@ namespace QLCH
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
+            this.ribbonPage3,
             this.ribbonPage2});
             this.ribbon.Size = new System.Drawing.Size(939, 158);
             this.ribbon.StatusBar = this.ribbonStatusBar;
@@ -112,21 +115,22 @@ namespace QLCH
             this.btn_QLKhach.Name = "btn_QLKhach";
             this.btn_QLKhach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_QLKhach_ItemClick);
             // 
-            // barButtonItem4
+            // btn_hopdong
             // 
-            this.barButtonItem4.Caption = "Quản lý hợp đồng";
-            this.barButtonItem4.Id = 4;
-            this.barButtonItem4.ImageOptions.Image = global::QLCH.Properties.Resources.groupheader_16x16;
-            this.barButtonItem4.ImageOptions.LargeImage = global::QLCH.Properties.Resources.groupheader_32x32;
-            this.barButtonItem4.Name = "barButtonItem4";
+            this.btn_hopdong.Caption = "Quản lý hợp đồng";
+            this.btn_hopdong.Id = 4;
+            this.btn_hopdong.ImageOptions.Image = global::QLCH.Properties.Resources.groupheader_16x16;
+            this.btn_hopdong.ImageOptions.LargeImage = global::QLCH.Properties.Resources.groupheader_32x32;
+            this.btn_hopdong.Name = "btn_hopdong";
             // 
             // barButtonItem5
             // 
-            this.barButtonItem5.Caption = "Quản lý hóa đơn";
+            this.barButtonItem5.Caption = "Quản lý hóa đơn ";
             this.barButtonItem5.Id = 5;
             this.barButtonItem5.ImageOptions.Image = global::QLCH.Properties.Resources.verticalaxistitles_16x16;
             this.barButtonItem5.ImageOptions.LargeImage = global::QLCH.Properties.Resources.verticalaxistitles_32x32;
             this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick);
             // 
             // barButtonItem6
             // 
@@ -143,17 +147,22 @@ namespace QLCH
             this.barButtonItem7.ImageOptions.Image = global::QLCH.Properties.Resources.suggestion_16x16;
             this.barButtonItem7.ImageOptions.LargeImage = global::QLCH.Properties.Resources.suggestion_32x32;
             this.barButtonItem7.Name = "barButtonItem7";
+            this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
             // 
             // barButtonItem8
             // 
             this.barButtonItem8.Caption = "Đổi mật khẩu";
             this.barButtonItem8.Id = 8;
+            this.barButtonItem8.ImageOptions.Image = global::QLCH.Properties.Resources.bouser_16x16;
+            this.barButtonItem8.ImageOptions.LargeImage = global::QLCH.Properties.Resources.bouser_32x32;
             this.barButtonItem8.Name = "barButtonItem8";
             // 
             // barButtonItem9
             // 
             this.barButtonItem9.Caption = "Đăng xuất";
             this.barButtonItem9.Id = 9;
+            this.barButtonItem9.ImageOptions.Image = global::QLCH.Properties.Resources.assignto_16x16;
+            this.barButtonItem9.ImageOptions.LargeImage = global::QLCH.Properties.Resources.assignto_32x32;
             this.barButtonItem9.Name = "barButtonItem9";
             // 
             // btn_DSLau
@@ -173,6 +182,7 @@ namespace QLCH
             this.barButtonItem3.ImageOptions.LargeImage = global::QLCH.Properties.Resources.chartsshowlegend_32x32;
             this.barButtonItem3.Name = "barButtonItem3";
             this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -203,8 +213,7 @@ namespace QLCH
             // ribbonPageGroup3
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.btn_QLKhach);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btn_hopdong);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "Thuê căn hộ";
             // 
@@ -221,6 +230,18 @@ namespace QLCH
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem6);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             // 
+            // ribbonPage3
+            // 
+            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup7});
+            this.ribbonPage3.Name = "ribbonPage3";
+            this.ribbonPage3.Text = "Báo cáo";
+            // 
+            // ribbonPageGroup7
+            // 
+            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
+            this.ribbonPageGroup7.Text = "ribbonPageGroup7";
+            // 
             // ribbonPage2
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -230,10 +251,10 @@ namespace QLCH
             // 
             // ribbonPageGroup6
             // 
+            this.ribbonPageGroup6.AllowTextClipping = false;
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem9);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.Text = "ribbonPageGroup6";
             // 
             // ribbonStatusBar
             // 
@@ -263,6 +284,7 @@ namespace QLCH
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Quản Lý Toà Nhà";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.QLCH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
@@ -283,7 +305,7 @@ namespace QLCH
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.BarButtonItem btn_QLKhach;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem btn_hopdong;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
@@ -297,5 +319,7 @@ namespace QLCH
         private DevExpress.XtraBars.Docking2010.DocumentManager documentManager1;
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
     }
 }

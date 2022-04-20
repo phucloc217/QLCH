@@ -17,6 +17,13 @@ namespace BUS
             DataTable dt = ketnoicsdl.LoadData("select * from nguoithue order by mant asc");
             return dt;
         }
+
+        public DataTable LoadLKKhachThue()
+        {
+            KetNoiCSDL ketnoicsdl = new KetNoiCSDL();
+            DataTable dt = ketnoicsdl.LoadData("select mant, hoten, cccd from nguoithue order by mant asc");
+            return dt;
+        }
         public string TaoMaKH()
         {
             string ma = "";

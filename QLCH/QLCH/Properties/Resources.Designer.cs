@@ -243,6 +243,26 @@ namespace QLCH.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap grandtotalsoffrowscolumnspivottable_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("grandtotalsoffrowscolumnspivottable_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grandtotalsoffrowscolumnspivottable_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("grandtotalsoffrowscolumnspivottable_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap groupheader_16x16 {
             get {
                 object obj = ResourceManager.GetObject("groupheader_16x16", resourceCulture);
@@ -316,6 +336,26 @@ namespace QLCH.Properties {
         internal static System.Drawing.Bitmap properties_32x32 {
             get {
                 object obj = ResourceManager.GetObject("properties_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reportlayoutpivottable_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("reportlayoutpivottable_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reportlayoutpivottable_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("reportlayoutpivottable_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

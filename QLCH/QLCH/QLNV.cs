@@ -178,5 +178,10 @@ namespace QLCH
                 }
             }
         }
+
+        private void QLNV_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
     }
 }

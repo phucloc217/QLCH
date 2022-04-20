@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraBars;
+using DevExpress.XtraReports.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,12 @@ namespace QLCH
 
         private void QLCH_Load(object sender, EventArgs e)
         {
-
+            if (Program.nv.Loainv==false)
+            {
+                ribbonPageGroup1.Visible = false;
+                ribbonPageGroup2.Visible = false;
+                ribbonPageGroup5.Visible = false;
+            }    
         }
         public Boolean KiemTraTonTai(string Frmname)
         {
@@ -109,6 +115,28 @@ namespace QLCH
                 frm.MdiParent = this;
                 frm.Show();
             }
+        }
+
+        private void barButtonItem4_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = new XtraForm1();
+            if (KiemTraTonTai("XtraForm1") == true)
+                frm.Activate();
+            else
+            {
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+
+        internal class XtraReport1
+        {
+        }
+
+        private void QLCH_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

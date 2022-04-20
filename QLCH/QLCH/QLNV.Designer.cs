@@ -314,6 +314,7 @@ namespace QLCH
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Quản lý nhân viên";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.QLNV_FormClosed);
             this.Load += new System.EventHandler(this.QLNV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             this.groupBox1.ResumeLayout(false);

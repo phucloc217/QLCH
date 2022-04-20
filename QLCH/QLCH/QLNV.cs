@@ -66,6 +66,7 @@ namespace QLCH
         private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
             barButtonItem2.Enabled = true;
+            btn_xoa.Enabled = true;
             groupBox1.Enabled = false;
             txt_HoTen.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, gridView1.Columns["hoten"]).ToString(); 
             txt_MaNV.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, gridView1.Columns["manv"]).ToString();

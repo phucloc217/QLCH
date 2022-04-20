@@ -21,7 +21,7 @@ namespace BUS
         public string TaoMaNV()
         {
             string ma = "";
-            int so;
+            int so=1;
             KetNoiCSDL ketnoicsdl = new KetNoiCSDL();
             DataTable dt = ketnoicsdl.LoadData("select manv from nhanvien order by manv desc");
             if (dt.Rows.Count > 0)

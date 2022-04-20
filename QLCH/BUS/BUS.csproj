@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CanHo_BUS.cs" />
+    <Compile Include="KhachThue_BUS.cs" />
+    <Compile Include="Lau_BUS.cs" />
+    <Compile Include="LoaiHoaDon_BUS.cs" />
     <Compile Include="NhanVien_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -100,3 +100,14 @@ C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\DAO.dll
 C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\BUS.pdb
 C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\DTO.pdb
 C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\DAO.pdb
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\obj\Debug\QLCH.QLNguoiThue.resources
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\DevExpress.Images.v21.2.dll
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\DevExpress.XtraRichEdit.v21.2.dll
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\DevExpress.XtraRichEdit.v21.2.xml
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\de\DevExpress.XtraRichEdit.v21.2.resources.dll
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\es\DevExpress.XtraRichEdit.v21.2.resources.dll
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\ja\DevExpress.XtraRichEdit.v21.2.resources.dll
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\bin\Debug\ru\DevExpress.XtraRichEdit.v21.2.resources.dll
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\obj\Debug\QLCH.QLLau.resources
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\obj\Debug\QLCH.QLCanHo.resources
+C:\Users\locng\Desktop\QLCH\QLCH\QLCH\obj\Debug\QLCH.QLDichVu.resources

@@ -18,7 +18,7 @@ namespace QLCH
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QLNV());
+            Application.Run(new QLDichVu());
         }
     }
 }
